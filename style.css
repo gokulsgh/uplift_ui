@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    background: linear-gradient(45deg, #000000 70%, #b71c1c); /* Darker red with more black */
+    position: fixed; /* Fixed navbar */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.navbar-brand {
+    height: 40px;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem; /* Increased gap for better spacing */
+}
+
+.navbar-links li {
+    display: flex;
+}
+
+/* Navigation Bar Button */
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem; /* Font size for better readability */
+    padding: 0.7rem 1.5rem; /* Padding to make the button larger */
+    border-radius: 12px; /* Rounded rectangular shape */
+    background-color: #b71c1c; /* Button background color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    font-family: 'Righteous', cursive; /* Font style */
+    display: flex; /* Flexbox layout for centering */
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    min-width: 100px; /* Minimum width to ensure text visibility */
+    white-space: nowrap; /* Prevent text wrapping */
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+.navbar-links a:hover {
+    background-color: #a00000; /* Darker red on hover */
+    color: #fff; /* White text color on hover */
+}
+
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 12rem 2rem; /* Increased padding for better spacing */
+    background-image: url('gitduck-vs-code-extensions-animation-opt.jpg');
+    background-position: center;
+    font-family: 'Righteous', cursive;
+    margin-top: 4rem; /* Add margin-top to avoid overlap with fixed navbar */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem; /* Larger font size for better visibility */
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.hero-section .highlight {
+    color: #ef2d2d; /* Red color for the highlighted text */
+}
+
+/* Feature Section */
+.feature-section {
+    padding: 4rem 2rem; /* Increased padding for better spacing */
+    background-color: #1b1a1a;
+    position: relative;
+    margin-top: -4rem; /* Adjust margin to remove black space between hero and feature sections */
+}
+
+.feature-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    max-width: 1200px; /* Ensure proper alignment within larger screens */
+    margin: 0 auto; /* Center content horizontally */
+}
+
+.feature-image {
+    width: 300px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    position: relative; /* Adjust positioning */
+}
+
+.feature-text {
+    text-align: left;
+    position: relative;
+    flex: 1;
+}
+
+.feature-section h2 {
+    font-size: 2.5rem; /* Larger font size for better visibility */
+    color: #ffffff;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 1rem; /* Increased space below heading */
+}
+
+.feature-section .highlight-red {
+    color: #ef2d2d;
+}
+
+.feature-section .subheading {
+    color: #b71c1c;
+    font-size: 1.2rem; /* Slightly larger font size for subheading */
+}
+
+.feature-section p {
+    margin: 1rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* Ensure proper readability */
+}
+
+.read-more-button {
+    padding: 0.75rem 2.5rem;
+    background-color: #b71c1c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Righteous', cursive;
+    margin-top: 1rem; /* Space above the button */
+}
+
+/* Ranking Text Section */
+.ranking-text-section {
+    padding: 2rem;
+    font-family: 'Righteous', cursive;
+    background-color: #000000;
+    text-align: center;
+}
+
+.ranking-text-section h2 {
+    font-size: 2.5rem; /* Larger font size for better visibility */
+}
+
+/* Ranking Background Section */
+.ranking-background-section {
+    background-image: url('wp1978964-retro-games-wallpapers.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Increased height for better visibility */
+    width: 100%;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 2rem;
+    background-image: url('gitduck-vs-code-extensions-animation-opt.jpg');
+    background-position: center;
+    color: #fff;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+
+.contact-form-container {
+    max-width: 600px; /* Increased width for better form display */
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+    padding: 2rem;
+    border-radius: 10px; /* Slight border-radius for smoother edges */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Increased gap for better spacing */
+}
+
+.contact-form label {
+    font-size: 1.1rem; /* Slightly larger font size */
+    font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 1.1rem; /* Slightly larger font size */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-form textarea {
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-submit-button {
+    padding: 0.75rem 2.5rem;
+    background-color: #b71c1c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Righteous', cursive;
+}
+
+/* Footer Section */
+.footer-section {
+    padding: 1.5rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+/* Scroll Animations */
+section {
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+section.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
